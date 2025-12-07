@@ -1,0 +1,17 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Endbericht Projekt Oldenburger See</a></li>
+      after: |
+        <li><a href="https://github.com/uhydro/Moor" target="blank">THL</a></li>
+    edit: https://github.com/uhydro/Moor/edit/main/%s
+    sharing: null
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+
